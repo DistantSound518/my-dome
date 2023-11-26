@@ -1,0 +1,980 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="keywords" content="DistantSound">
+		<meta name="author" content="DistantSound">
+		<meta name="format-detection" content="email=no">
+		<meta name="format-detection" content="telephone=no">
+		<title> 数学演示实验导学系统 </title>
+		<link rel="stylesheet" type="text/css" href="css/DsGrid.css">
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/DsSub.css">
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="nav-fixed-openclose text-c d-xl-none">
+			<i class="float-l d-xl-none iconfont font-s18 c-black text-c header-nav-open"> &#xe657; </i>
+			<i class="float-l d-xl-none iconfont font-s18 c-black text-c header-nav-close"> &#xe657; </i>
+		</div>
+
+		<header class="header">
+			<div class="float-l header-body">
+				<div class="float-l header-main">
+					<a href="index.html" class="float-l w-100 top-logo"><img src="images/t-logo.png" class="float-l" /></a>
+					<div class="header-div transition-05">
+						<div class="c-div">
+							<nav class="float-l header-nav">
+								<ul class="float-l w-100 nav-ul">
+									<li class="float-l w-100 nav-li active"><a href="index.html" class="float-l w-100 text-l font-s18 c-black c-red-h a-link"> 首页 </a></li>
+									<li class="float-l w-100 nav-li">
+										<h3 class="float-l w-100 h3 font-w4 font-s18 text-l c-black c-red-h">  课程实验 <i class="font-s16 iconfont icon-font transition-10 ml-10"> &#xe63b; </i></h3>
+										<ul class="float-l w-100 plr-15 bgc-white ovf-h sub-ul">
+											<li class="float-l w-100 sub-li"><a href="calculusExperiment.html" class="float-l w-100 font-s18 text-l c-black c-red-h a-link"> 微积分实验 </a></li>
+											<li class="float-l w-100 sub-li"><a href="geometricAlgebraExperiment.html" class="float-l w-100 font-s18 text-l c-black c-red-h a-link"> 几何代数实验 </a></li>
+											<li class="float-l w-100 sub-li"><a href="probabilityStatisticsExperiment.html" class="float-l w-100 font-s18 text-l c-black c-red-h a-link"> 概率统计实验 </a></li>
+											<li class="float-l w-100 sub-li"><a href="otherExperiment.html" class="float-l w-100 font-s18 text-l c-black c-red-h a-link"> 其他实验 </a></li>
+										</ul>
+									</li>
+									<li class="float-l w-100 nav-li"><a href="ExperimentAppointment.html" class="float-l w-100 text-l font-s18 c-black c-red-h a-link"> 实验预约 </a></li>
+									<li class="float-l w-100 nav-li"><a href="InformationService.html" class="float-l w-100 text-l font-s18 c-black c-red-h a-link"> 信息与服务 </a></li>
+								</ul>
+							</nav>
+
+							<div class="r-box header-login">
+								<a href="Login.html" class="float-l font-s18 plr-25 bgc-red line-h40 c-white mt-30 radius-03 ovf-h opa-08-h a-link header-login-btn"> 登录 </a>
+								<!-- 登录成功 -->
+								<div class="float-l pos-r header-login-successful d-none">
+									<img src="./images/pic/ProfilePhoto.jpg" class="float-l mt-30 radius-c ovf-h login-avatar">
+									<div class="float-l ul-box plr-15 bgc-white">
+										<h2 class="float-l font-s28 font-w4 line-h80"> Hi 欧阳泽涛 </h2>
+										<a href="myProfile.html" class="float-l w-100 font-s18 text-l c-grey-2 c-red-h a-link"><i class="float-l font-s24 iconfont icon-font mr-10"> &#xe661; </i> 我的资料  </a>
+										<a href="myChange-pasd.html" class="float-l w-100 font-s18 text-l c-grey-2 c-red-h a-link"><i class="float-l font-s24 iconfont icon-font mr-10"> &#xe718; </i> 修改密码  </a>
+										<a href="myAppointment.html" class="float-l w-100 font-s18 text-l c-grey-2 c-red-h a-link"><i class="float-l font-s24 iconfont icon-font mr-10"> &#xe60d; </i> 我的预约  </a>
+										<a href="myMessage.html" class="float-l w-100 font-s18 text-l c-grey-2 c-red-h a-link"><i class="float-l font-s24 iconfont icon-font mr-10"> &#xe60f; </i> 我的留言  </a>
+										<a href="javascript:void(0);" class="float-l w-100 font-s18 text-l c-grey-2 c-red-h a-link"><i class="float-l font-s24 iconfont icon-font mr-10"> &#xe780; </i> 退出      </a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>  
+		</header>
+
+		<main> <!--main Start -->
+			<section class="section-1">
+				<div class="float-l container-banner">
+					<div class="swiper-container swiper-banner">
+						<div class="swiper-wrapper pos-r">
+							<div class="swiper-slide"> 
+								<img src="images/ad/a-1.png" class="img">
+								<div class="float-l w-100 swiper-banner-txt">
+									<div class="text-box plr-15">
+										<h3 class="float-l w-100 mt-50 c-black line-h30 text-l h3 font-s20 font-w3 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1s"> 数学演示实验导学系统 </h3>
+										<h1 class="float-l w-100 mt-15 c-black line-h50 text-l h1 font-s30 font-w6 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1.2s"> 1让每一位师生都轻松拥有 <br/> 自己的专属实验室 </h1>
+										<p  class="float-l w-100 mt-15 ptb-15 p-text c-black text-l line-h30 font-s14 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1.4s">
+											通过多媒体手段，依托学科特色，打造富有科技感的物理、数学等学科虚拟仿真实验资源和应用，做到教学模式多样化，教学资源共享化，教育信息数字化。
+										</p>
+										<div class="c-box">
+											<a href="#" class="float-l mt-15 plr-20 bgc-red c-white font-s18 line-h50 opa-08-h radius-05 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1.6s"> 点击阅读 <i class="iconfont"> &#xe61c; </i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide"> 
+								<img src="images/ad/a-1.png" class="img">
+								<div class="float-l w-100 swiper-banner-txt">
+									<div class="text-box plr-15">
+										<h3 class="float-l w-100 mt-50 c-black line-h30 text-l h3 font-s20 font-w3 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1s"> 数学演示实验导学系统 </h3>
+										<h1 class="float-l w-100 mt-15 c-black line-h50 text-l h1 font-s30 font-w6 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1.2s"> 2让每一位师生都轻松拥有 <br/> 自己的专属实验室 </h1>
+										<p  class="float-l w-100 mt-15 p-text ptb-15 c-black text-l line-h30 font-s14 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1.4s">
+											通过多媒体手段，依托学科特色，打造富有科技感的物理、数学等学科虚拟仿真实验资源和应用，做到教学模式多样化，教学资源共享化，教育信息数字化。
+										</p>
+										<div class="c-box">
+											<a href="#" class="float-l mt-15 plr-20 bgc-red c-white font-s18 line-h50 opa-08-h radius-05 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1.6s"> 点击阅读 <i class="iconfont"> &#xe61c; </i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide"> 
+								<img src="images/ad/a-1.png" class="img">
+								<div class="float-l w-100 swiper-banner-txt">
+									<div class="text-box plr-15">
+										<h3 class="float-l w-100 mt-50 c-black line-h30 text-l h3 font-s20 font-w3 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1s"> 数学演示实验导学系统 </h3>
+										<h1 class="float-l w-100 mt-15 c-black line-h50 text-l h1 font-s30 font-w6 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1.2s"> 3让每一位师生都轻松拥有 <br/> 自己的专属实验室 </h1>
+										<p  class="float-l w-100 mt-15 p-text ptb-15 c-black text-l line-h30 font-s14 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1.4s">
+											通过多媒体手段，依托学科特色，打造富有科技感的物理、数学等学科虚拟仿真实验资源和应用，做到教学模式多样化，教学资源共享化，教育信息数字化。
+										</p>
+										<div class="c-box">
+											<a href="#" class="float-l mt-15 plr-20 bgc-red c-white font-s18 line-h50 opa-08-h radius-05 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1.6s"> 点击阅读 <i class="iconfont"> &#xe61c; </i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide"> 
+								<img src="images/ad/a-1.png" class="img">
+								<div class="float-l w-100 swiper-banner-txt">
+									<div class="text-box plr-15">
+										<h3 class="float-l w-100 mt-50 c-black line-h30 text-l h3 font-s20 font-w3 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1s"> 数学演示实验导学系统 </h3>
+										<h1 class="float-l w-100 mt-15 c-black line-h50 text-l h1 font-s30 font-w6 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1.2s"> 4让每一位师生都轻松拥有 <br/> 自己的专属实验室 </h1>
+										<p  class="float-l w-100 mt-15 p-text ptb-15 c-black text-l line-h30 font-s14 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1.4s">
+											通过多媒体手段，依托学科特色，打造富有科技感的物理、数学等学科虚拟仿真实验资源和应用，做到教学模式多样化，教学资源共享化，教育信息数字化。
+										</p>
+										<div class="c-box">
+											<a href="#" class="float-l mt-15 plr-20 bgc-red c-white font-s18 line-h50 opa-08-h radius-05 ani animate__animated" swiper-animate-effect="animate__fadeInUpBig" swiper-animate-duration="1.6s"> 点击阅读 <i class="iconfont"> &#xe61c; </i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination my-pagination"></div>
+						<div class="float-l my-swiper-navigation d-none d-xl-block">
+							<div class="float-l my-swiper-button-prev text-c c-white-h font-s30 radius-c cursor-p opa-08-h"><i class="iconfont"> &#xe61d; </i></div>
+							<div class="float-l my-swiper-button-next text-c c-white-h font-s30 radius-c cursor-p opa-08-h"><i class="iconfont"> &#xe61c; </i></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-2 bgc-grey">
+				<div class="container">
+					<div class="row">
+						<div class="col col-xl-6 bgc-white section-left">
+							<div class="row ptb-50">
+								<div class="sub-title">
+									<h2 class="float-l w-100 h2 font-s28 c-black"> 通知 </h2>
+								</div>
+								<div class="row">
+									<img src="./images/ad/o-1.png" class="float-l img mt-15">
+								</div>
+								<ul class="row row-ul">
+									<li class="col">
+										<div class="div-box"> 
+											<a href="#" class="float-l w-100 mt-15 ptb-10 a-link">
+												<h2 class="float-l w-100 h2 text-l c-black font-s18 line-h30 font-w4 text-ellipsis"> 在线教学技术支持专栏 </h2>
+												<time class="float-l c-grey-1 line-h30 font-s14 text-l"> 2021-07-31 </time>
+											</a>
+										</div>
+									</li>
+									<li class="col">
+										<div class="div-box"> 
+											<a href="#" class="float-l w-100 mt-15 ptb-10 a-link">
+												<h2 class="float-l w-100 h2 text-l c-black font-s18 line-h30 font-w4 text-ellipsis"> 如何登陆上数学演示实验导学系统 </h2>
+												<time class="float-l c-grey-1 line-h30 font-s14 text-l"> 2021-07-31 </time>
+											</a>
+										</div>
+									</li>
+									<li class="col">
+										<div class="div-box"> 
+											<a href="#" class="float-l w-100 mt-15 ptb-10 a-link">
+												<h2 class="float-l w-100 h2 text-l c-black font-s18 line-h30 font-w4 text-ellipsis"> 在线教学技术支持专栏 </h2>
+												<time class="float-l c-grey-1 line-h30 font-s14 text-l"> 2021-07-31 </time>
+											</a>
+										</div>
+									</li>
+									<li class="col">
+										<div class="div-box"> 
+											<a href="#" class="float-l w-100 mt-15 ptb-10 a-link">
+												<h2 class="float-l w-100 h2 text-l c-black font-s18 line-h30 font-w4 text-ellipsis"> 如何登陆上数学演示实验导学系统 </h2>
+												<time class="float-l c-grey-1 line-h30 font-s14 text-l"> 2021-07-31 </time>
+											</a>
+										</div>
+									</li>
+									<li class="col">
+										<div class="div-box"> 
+											<a href="#" class="float-l w-100 mt-15 ptb-10 a-link">
+												<h2 class="float-l w-100 h2 text-l c-black font-s18 line-h30 font-w4 text-ellipsis"> 基于GPS轨迹数据的货车交通流量需求预测循环神经网络模型 </h2>
+												<time class="float-l c-grey-1 line-h30 font-s14 text-l"> 2021-07-31 </time>
+											</a>
+										</div>
+									</li>
+								</ul>
+								<div class="row">
+									<a href="#" class="plr-30 line-h45 font-s22 bgc-red radius-05 c-white opa-08-h ovf-h"> 更多 </a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col col-xl-6 section-right">
+							<div class="row ptb-50">
+								<div class="sub-title">
+									<h2 class="float-l w-100 h2 font-s28 c-black"> 实验室开放时间 </h2>
+								</div>
+								<div class="row swiper-tab"><!-- swiper-tab -->
+									<h6 class="float-l w-100 plr-15 ptb-15 font-s24 text-c line-h50 c-red font-w3 text-ellipsis">  2020-2021学年春季学期第1000教学周 </h6>
+									<div class="col">
+										<div class="div-box">
+											<div class="swiper-container tab-head user-s-no"><!-- tab-head -->
+												<div class="swiper-wrapper">
+													<div class="swiper-slide"><div class="float-l w-100 item-head pos-r"><div class="box pos-r"><img src="./images/bg-tab-head.png" class="float-l d-none head-img"><span class="float-l w-100 c-grey-2 s-pan font-s14 mt-10 text-c pos-a"> 周一 </span></div></div></div>
+													<div class="swiper-slide"><div class="float-l w-100 item-head pos-r"><div class="box pos-r"><img src="./images/bg-tab-head.png" class="float-l d-none head-img"><span class="float-l w-100 c-grey-2 s-pan font-s14 mt-10 text-c pos-a"> 周二 </span></div></div></div>
+													<div class="swiper-slide"><div class="float-l w-100 item-head pos-r"><div class="box pos-r"><img src="./images/bg-tab-head.png" class="float-l d-none head-img"><span class="float-l w-100 c-grey-2 s-pan font-s14 mt-10 text-c pos-a"> 周三 </span></div></div></div>
+													<div class="swiper-slide"><div class="float-l w-100 item-head pos-r"><div class="box pos-r"><img src="./images/bg-tab-head.png" class="float-l d-none head-img"><span class="float-l w-100 c-grey-2 s-pan font-s14 mt-10 text-c pos-a"> 周四 </span></div></div></div>
+													<div class="swiper-slide"><div class="float-l w-100 item-head pos-r"><div class="box pos-r"><img src="./images/bg-tab-head.png" class="float-l d-none head-img"><span class="float-l w-100 c-grey-2 s-pan font-s14 mt-10 text-c pos-a"> 周五 </span></div></div></div>
+													<div class="swiper-slide"><div class="float-l w-100 item-head pos-r"><div class="box pos-r"><img src="./images/bg-tab-head.png" class="float-l d-none head-img"><span class="float-l w-100 c-grey-2 s-pan font-s14 mt-10 text-c pos-a"> 周六 </span></div></div></div>
+													<div class="swiper-slide"><div class="float-l w-100 item-head pos-r"><div class="box pos-r"><img src="./images/bg-tab-head.png" class="float-l d-none head-img"><span class="float-l w-100 c-grey-2 s-pan font-s14 mt-10 text-c pos-a"> 周日 </span></div></div></div>
+												</div>
+											</div>
+											<div class="swiper-container tab-content"><!-- tab-content -->
+												<div class="swiper-wrapper">
+													<div class="swiper-slide"> 
+														<ul class="float-l w-100 tab-ul mt-15"> 
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe67f; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月12日星期一  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第1节  8-10点 】 </h4>
+																<span class="float-r font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe63d; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月12日星期一  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第2节  10-12点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe619; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月12日星期一  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  12-14点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe638; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月12日星期一  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  14-16点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe650; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月12日星期一  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  16-18点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe60c; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月12日星期一  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  19-21点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+														</ul>
+													</div>
+													<div class="swiper-slide"> 
+														<ul class="float-l w-100 tab-ul mt-15"> 
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe67f; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月13日星期二  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第1节  8-10点 】 </h4>
+																<span class="float-r font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe63d; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月13日星期二  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第2节  10-12点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe619; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月13日星期二  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  12-14点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe638; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月13日星期二  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  14-16点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe650; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月13日星期二  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  16-18点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe60c; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月13日星期二  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  19-21点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+														</ul>
+													</div>
+													<div class="swiper-slide"> 
+														<ul class="float-l w-100 tab-ul mt-15"> 
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe67f; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月14日星期三  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第1节  8-10点 】 </h4>
+																<span class="float-r font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe63d; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月14日星期三  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第2节  10-12点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe619; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月14日星期三  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  12-14点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe638; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月14日星期三  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  14-16点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe650; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月14日星期三  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  16-18点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe60c; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月14日星期三  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  19-21点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+														</ul>
+													</div>
+													<div class="swiper-slide"> 
+														<ul class="float-l w-100 tab-ul mt-15"> 
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe67f; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月15日星期四  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第1节  8-10点 】 </h4>
+																<span class="float-r font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe63d; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月15日星期四  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第2节  10-12点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe619; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月15日星期四  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  12-14点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe638; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月15日星期四  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  14-16点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe650; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月15日星期四  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  16-18点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe60c; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月15日星期四  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  19-21点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+														</ul>
+													</div>
+													<div class="swiper-slide"> 
+														<ul class="float-l w-100 tab-ul mt-15"> 
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe67f; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月16日星期五  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第1节  8-10点 】 </h4>
+																<span class="float-r font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe63d; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月16日星期五 </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第2节  10-12点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe619; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月16日星期五 </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  12-14点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe638; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月16日星期五  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  14-16点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe650; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月16日星期五 </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  16-18点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe60c; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月16日星期五  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  19-21点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+														</ul>
+													</div>
+													<div class="swiper-slide"> 
+														<ul class="float-l w-100 tab-ul mt-15"> 
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe67f; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月17日星期六  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第1节  8-10点 】 </h4>
+																<span class="float-r font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe63d; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月17日星期六 </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第2节  10-12点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe619; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月17日星期六 </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  12-14点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe638; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月17日星期六  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  14-16点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe650; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月17日星期六 </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  16-18点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-open"> 开放 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe60c; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月17日星期六  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  19-21点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+														</ul>
+													</div>
+													<div class="swiper-slide"> 
+														<ul class="float-l w-100 tab-ul mt-15"> 
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe67f; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月18日星期日  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第1节  8-10点 】 </h4>
+																<span class="float-r font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe63d; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月18日星期日 </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第2节  10-12点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe619; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月18日星期日 </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  12-14点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe638; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月18日星期日  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  14-16点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe650; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月18日星期日 </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  16-18点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+															<li class="float-l w-100 ptb-20">
+																<i class="float-l icon-font iconfont font-s30 text-c c-red radius-05"> &#xe60c; </i>
+																<time class="float-l plr-10 line-h50 font-s18 text-l"> 2021年4月18日星期日  </time>
+																<h4 class="float-l h4 font-s18 line-h50 text-l font-w4">【 第3节  19-21点 】 </h4>
+																<span class="float-r mt-05 font-s20 line-h35 plr-20 radius-05 ovf-h course-close"> 关闭 </span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-3 ptb-50">
+				<div class="container">
+					<div class="row">
+						<div class="sub-title">
+							<h2 class="float-l w-100 h2 font-s28 c-black"> 推荐实验 </h2>
+						</div>
+					</div>
+					<div class="row mt-50 card-list-box">
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-5.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> “航拍江西省新余市分宜县凤阳镇源盛农业菱角种植基地，农民忙碌于采收有水中“金元宝”之称的菱角。正值菱角采收旺季 ” 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-6.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> “RFID加密器中的数学 ” 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-7.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> “轮廓检测中的数学 ” 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-8.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> “视频解码器中的数学 ” 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-1.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> “倒立摆钟的的数学”演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-2.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> “履带机器人中的数学 ” 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-3.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> “机械手臂中的数学 ” 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-4.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> 机器人编队中的数学 ” 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-4 ptb-50 bgc-grey">
+				<div class="container">
+					<div class="row">
+						<div class="sub-title">
+							<h2 class="float-l w-100 h2 font-s28 c-black"> 热门实验 </h2>
+						</div>
+					</div>
+					<div class="row mt-50 card-list-box">
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 254 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-1.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> “倒立摆钟的的数学” 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 286 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-2.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> “履带机器人中的数学 ” 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-3.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> 机械手臂中的数学 ” 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-4.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> “机器人编队中的数学 ” 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-5.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> "指纹识别中的数学" 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-6.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> “RFID加密器中的数学 ”演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h">
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span>
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-7.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> “轮廓检测中的数学 ” 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col col-md-6 col-xl-3 mb-15 ds-o">
+							<div class="div-box">
+								<div class="c-box border-grey radius-05 ovf-h"> 
+									<div class="c-div pos-r">
+										<div class="float-l w-100 plr-15 pos-a bgc-black-alpha user-likes z-idx-10 user-s-no">
+											<div class="l-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe686; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white"> 20000000 </span> 
+											</div>
+											<div class="r-box">
+												<i class="float-l iconfont icon-font font-s22 c-white"> &#xe609; </i>
+												<span class="float-l s-pan plr-10 font-s16 c-white likes-number"> 26340 </span>
+											</div>
+										</div>
+										<a href="#" class="float-l w-100 pos-r ovf-h pic-img zoom-s-h"><img src="./images/pic/00-8.png" class="float-l transition-05 zoom-s12 img"></a>
+									</div>
+									<div class="c-box plr-15">
+										<h2 class="float-l mt-20 h2 font-s18 w-100 text-l text-ellipsis2"> 视频解码器中的数学 ” 演示实验 </h2>
+										<a href="#" class="float-l bgc-red mtb-20 plr-15 c-white font-s20 btn-35 radius-05 opa-08-h ovf-h"> 详情 </a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-5 ptb-50 bgc-black-blue">
+				<div class="container">
+					<div class="row">
+						<div class="col col-xl-7">
+							<div class="c-box">
+								<a href="#" class="float-l log-link"><img src="./images/b-logo.png" class="float-l img"></a>
+							</div>
+							<div class="c-box mt-20">
+								<h3 class="float-l w-100 text-l h3 line-h40 font-s14 c-white font-w3"> 地址： <span class="s-pan c-grey-1"> 北京市海淀区上园村 3 号 北京交通大学 </span></h3>
+								<h3 class="float-l w-100 text-l h3 line-h40 font-s14 c-white font-w3"> 邮编： <span class="s-pan c-grey-1"> 10086 </span></h3>
+								<h3 class="float-l w-100 text-l h3 line-h40 font-s14 c-white font-w3"> 电话： <span class="s-pan c-grey-1"> 086+010-67889237 </span></h3>
+								<h3 class="float-l w-100 text-l h3 line-h40 font-s14 c-white font-w3"> 邮件： <a href="mailto:bjjtmdegs@bjtu.edu.cn" class="s-pan c-red"> bjjtmdegs@bjtu.edu.cn  </a></h3>
+							</div> 
+						</div>
+						<div class="col col-xl-5 d-none d-xl-inline-block">
+							<div class="c-box">
+								<h2 class="float-l w-100 text-l font-s18 c-white mt-20"> 快速链接 </h2>
+								<ul class="float-l w-100 ul-box mt-20">
+									<li class="float-l w-50"><a href="#" class="float-l font-s14 c-grey-1 line-h50 c-red-h a-link"><em class="float-l radius-c bgc-grey-1 em-dots"></em> 微积分实验 </a></li>
+									<li class="float-l w-50"><a href="#" class="float-l font-s14 c-grey-1 line-h50 c-red-h a-link"><em class="float-l radius-c bgc-grey-1 em-dots"></em> 实验预约 </a></li>
+									<li class="float-l w-50"><a href="#" class="float-l font-s14 c-grey-1 line-h50 c-red-h a-link"><em class="float-l radius-c bgc-grey-1 em-dots"></em> 几何代数实验  </a></li>
+									<li class="float-l w-50"><a href="#" class="float-l font-s14 c-grey-1 line-h50 c-red-h a-link"><em class="float-l radius-c bgc-grey-1 em-dots"></em> 信息与服务 </a></li>
+									<li class="float-l w-50"><a href="#" class="float-l font-s14 c-grey-1 line-h50 c-red-h a-link"><em class="float-l radius-c bgc-grey-1 em-dots"></em> 概率统计实验 </a></li>
+									<li class="float-l w-50"><a href="#" class="float-l font-s14 c-grey-1 line-h50 c-red-h a-link"><em class="float-l radius-c bgc-grey-1 em-dots"></em> 登录 </a></li>
+									<li class="float-l w-50"><a href="#" class="float-l font-s14 c-grey-1 line-h50 c-red-h a-link"><em class="float-l radius-c bgc-grey-1 em-dots"></em> 其他实验 </a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main> <!--main End -->
+		
+		<footer class="bgc-black-blue">
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col col-xl-6">
+							<address class="float-l text-l font-s14 c-grey-1"> 北京交通大学数学演示实验导学系统版权所有  ©2012京ICP备12022306 </address>
+						</div>
+						<div class="col col-xl-6 mt-20">
+							<div class="l-div">
+								<i class="float-l font-s20 iconfont icon-font c-grey-1"> &#xe629; </i>
+								<h3 class="float-l ml-05 h3 font-s14 c-grey-1 font-w3">
+									<span class="float-l s-pan"> 当前在线人数： </span>
+									<span class="float-l s-pan plr-05 c-red"> 15630 </span>
+								</h3>
+							</div>
+							<div class="r-div">
+								<i class="float-l font-s18 iconfont icon-font c-grey-1"> &#xe63a; </i>
+								<h3 class="float-l ml-05 h3 font-s14 c-grey-1 font-w3">
+									<span class="float-l s-pan"> 访问量： </span>
+									<span class="float-l s-pan plr-05 c-red"> 7894438 </span>
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/swiper.js"></script>
+		<script src="js/swiper.animate1.0.3.min.js"></script>
+		<script src="plugins/jq.simpleLoadMore/jq.simpleLoadMore.min.js"></script>
+		<script src="js/ScrollReveal.js"></script>
+		<script src="js/public.js"></script>
+		<script src="js/my-ScrollReveal.js"></script>
+	</body>
+</html>
